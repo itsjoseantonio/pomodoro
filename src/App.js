@@ -6,14 +6,30 @@ function padTime(time) {
     return time.toString().padStart(2, "0");
 }
 
-const buttons = ["Pomodoro", "Long Break", "Short Break"];
+const options = [
+    {
+        name: 'Pomodoro',
+        time: 25
+    },
+    {
+        name: 'Long Break',
+        time: 10
+    },
+    {
+        name: 'Short Break',
+        time: 5
+    }
+];
 
 export default function App() {
     const [title, setTitle] = useState("Let the countdown begin!!!");
-    const [timeLeft, setTimeLeft] = useState(10);
+    const [timeLeft, setTimeLeft] = useState(25 * 60);
     const [isRunning, setIsRunning] = useState(false);
-    // const [active, setActive] = useState(true);
     const intervalRef = useRef(null);
+
+    function handleTime(value){
+        setTimeLeft(value * 60);
+    }
 	
 	function startTimer(){
         if(intervalRef.current !== null) return
@@ -49,7 +65,7 @@ export default function App() {
     return (
         <div className="app">
             <div className="options">
-                <ButtonsGroup buttons={buttons}/>
+                <ButtonsGroup options={options} onClick={handleTime}/>
             </div>
             <h2>{title}</h2>
 
