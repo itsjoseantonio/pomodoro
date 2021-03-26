@@ -13,8 +13,8 @@ body {
 
 .app {
     min-height: 100vh;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,5 +92,9 @@ h2 {
 
     .buttons button {
         font-size: 18px;
+    }
+
+    .options button {
+        font-size: 16px;
     }
 }

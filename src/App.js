@@ -22,13 +22,27 @@ const options = [
 ];
 
 export default function App() {
-    const [title, setTitle] = useState("Let the countdown begin!!!");
+    const [title, setTitle] = useState("Let's go!");
     const [timeLeft, setTimeLeft] = useState(25 * 60);
     const [isRunning, setIsRunning] = useState(false);
     const intervalRef = useRef(null);
 
+    function getValue(){
+        const buttons = document.querySelectorAll(".options button");
+        let valueTime;
+        buttons.forEach((e,i) => {
+            if(e.classList.contains("active")){
+                valueTime = e.dataset.time
+            }
+        })
+        return valueTime
+    }
+
     function handleTime(value){
         setTimeLeft(value * 60);
+        setIsRunning(false);
+        setTitle("Let's go!");
+        clearInterval(intervalRef.current);
     }
 	
 	function startTimer(){
@@ -52,11 +66,12 @@ export default function App() {
     }
     
     function resetTimer() {
+        const valueTime = getValue();
         clearInterval(intervalRef.current);
-        setTitle("Ready to go another round?");
-        setTimeLeft(25 * 60)
-        intervalRef.current = null;
+        setTitle("Let's go!");
+        setTimeLeft(valueTime * 60)
         setIsRunning(false);
+        intervalRef.current = null;
     }
 
     const minutes = padTime(Math.floor(timeLeft / 60));
