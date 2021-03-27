@@ -43,6 +43,7 @@ export default function App() {
         setIsRunning(false);
         setTitle("Let's go!");
         clearInterval(intervalRef.current);
+        intervalRef.current = null;
     }
 	
 	function startTimer(){
