@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import ButtonsGroup from './components/ButtonsGroup';
 import "./App.css";
+import Popup from "./components/popup/Popup";
 
 function padTime(time) {
     return time.toString().padStart(2, "0");
@@ -26,6 +27,7 @@ export default function App() {
     const [timeLeft, setTimeLeft] = useState(25 * 60);
     const [isRunning, setIsRunning] = useState(false);
     const intervalRef = useRef(null);
+    const ref = useRef(null)
 
     function getValue(){
         const buttons = document.querySelectorAll(".options button");
@@ -44,6 +46,10 @@ export default function App() {
         setTitle("Let's go!");
         clearInterval(intervalRef.current);
         intervalRef.current = null;
+    }
+
+    function handlePopup(){
+        ref.current.toggleShow();
     }
 	
 	function startTimer(){
@@ -80,6 +86,7 @@ export default function App() {
 
     return (
         <div className="app">
+            <span className="info" onClick={handlePopup}>?</span>
             <div className="options">
                 <ButtonsGroup options={options} onClick={handleTime}/>
             </div>
@@ -96,6 +103,7 @@ export default function App() {
                 {isRunning && <button onClick={stopTimer}>Stop</button>}
                 <button onClick={resetTimer}>Reset</button>
             </div>
+            <Popup ref={ref}/>
         </div>
     );
 }

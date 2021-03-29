@@ -7,7 +7,7 @@ Pomodoro Technique which is a time management method developed by Francesco Ciri
 #### 🛠️ Built with
 
 - Creating timers
-- React state w/ useState()
-- React effects w/ useEffect()
-- React refs w/ useRef()
+- React state - useState()
+- React effects - useEffect()
+- React refs - useRef()
 - Parent and child components

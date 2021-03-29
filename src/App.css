@@ -21,6 +21,24 @@ body {
     justify-content: center;
     background: #87d7cc;
     color: #2c888d;
+    position: relative;
+}
+
+.info {
+    font-size: 20px;
+    color: #87d7cc;
+    background-color: #1f6e72;
+    font-family: monospace;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
 }
 
 h2 {
