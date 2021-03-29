@@ -67,13 +67,6 @@ h2 {
     transition: 0.3s ease all;
 }
 
-.buttons button:hover {
-    border-radius: 10px;
-    background: #f5f8ca;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
-}
-
 .buttons button:not(:last-child) {
     margin-right: 10px;
 }

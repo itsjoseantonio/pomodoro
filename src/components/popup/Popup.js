@@ -20,7 +20,7 @@ const Popup = forwardRef((props, ref) => {
                 <span className="popup-close" onClick={toggleShow}>
                     <svg
                         id="Capa_1"
-                        enable-background="new 0 0 386.667 386.667"
+                        enableBackground="new 0 0 386.667 386.667"
                         height="512"
                         viewBox="0 0 386.667 386.667"
                         width="512"

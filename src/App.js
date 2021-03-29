@@ -53,8 +53,11 @@ export default function App() {
     }
 	
 	function startTimer(){
+        const valueTime = getValue();
+        console.log(valueTime)
         if(intervalRef.current !== null) return
-        setTitle(`You're doing great!`);
+        if(parseInt(valueTime) !== 25) setTitle("Taking rest...")
+        else setTitle(`You're doing great!`);
         setIsRunning(true);
 		intervalRef.current = setInterval(() => {
 			setTimeLeft(timeLeft => {
