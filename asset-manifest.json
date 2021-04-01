@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.ffb9f7ac.chunk.css",
-    "main.js": "/static/js/main.fb2b4b01.chunk.js",
-    "main.js.map": "/static/js/main.fb2b4b01.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.af0cddbb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.af0cddbb.js.map",
-    "static/js/2.218f4da8.chunk.js": "/static/js/2.218f4da8.chunk.js",
-    "static/js/2.218f4da8.chunk.js.map": "/static/js/2.218f4da8.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.87567ccefff722365f8757a9050c1d1b.js": "/precache-manifest.87567ccefff722365f8757a9050c1d1b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.ffb9f7ac.chunk.css.map": "/static/css/main.ffb9f7ac.chunk.css.map",
-    "static/js/2.218f4da8.chunk.js.LICENSE.txt": "/static/js/2.218f4da8.chunk.js.LICENSE.txt"
+    "main.css": "/pomodoro/static/css/main.ffb9f7ac.chunk.css",
+    "main.js": "/pomodoro/static/js/main.fb2b4b01.chunk.js",
+    "main.js.map": "/pomodoro/static/js/main.fb2b4b01.chunk.js.map",
+    "runtime-main.js": "/pomodoro/static/js/runtime-main.ae83913c.js",
+    "runtime-main.js.map": "/pomodoro/static/js/runtime-main.ae83913c.js.map",
+    "static/js/2.218f4da8.chunk.js": "/pomodoro/static/js/2.218f4da8.chunk.js",
+    "static/js/2.218f4da8.chunk.js.map": "/pomodoro/static/js/2.218f4da8.chunk.js.map",
+    "index.html": "/pomodoro/index.html",
+    "precache-manifest.501155a82e444a6b77b82c7c1a937453.js": "/pomodoro/precache-manifest.501155a82e444a6b77b82c7c1a937453.js",
+    "service-worker.js": "/pomodoro/service-worker.js",
+    "static/css/main.ffb9f7ac.chunk.css.map": "/pomodoro/static/css/main.ffb9f7ac.chunk.css.map",
+    "static/js/2.218f4da8.chunk.js.LICENSE.txt": "/pomodoro/static/js/2.218f4da8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.af0cddbb.js",
+    "static/js/runtime-main.ae83913c.js",
     "static/js/2.218f4da8.chunk.js",
     "static/css/main.ffb9f7ac.chunk.css",
     "static/js/main.fb2b4b01.chunk.js"
