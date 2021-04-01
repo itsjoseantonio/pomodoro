@@ -38,7 +38,6 @@ const Popup = forwardRef((props, ref) => {
                     after the tomato-shaped kitchen timer that Cirillo used as a
                     university student.
                 </p>
-                <p className="author">- Wikipedia</p>
             </div>
         </div>
     );
