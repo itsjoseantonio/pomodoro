@@ -4,7 +4,7 @@
 
 #### 📝 Description
 
-Pomodoro Technique which is a time management method developed by Francesco Cirillo.
+Pomodoro Technique is a time management method developed by Francesco Cirillo.
 
 #### 🛠️ Built with
 
